@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+:root {
+  --main: #04233a;
+  --bg0: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@theme inline {
+  --font-outfit: var(--font-outfit);
+  --font-instrument-sans: var(--font-instrument-sans);
+}
+
+body {
+  background: var(--bg0);
+  color: var(--main);
+  font-family: var(--font-instrument-sans), sans-serif;
+}
