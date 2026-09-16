@@ -12,7 +12,13 @@ export default function Footer() {
       <p className="font-normal opacity-50" style={instrument}>
         © 2026 Arq. Noelia Fernández Chidiak. Todos los derechos reservados.
       </p>
-      <div className="flex gap-5 font-medium" style={instrument}>
+      <div className="flex flex-wrap gap-x-5 gap-y-1 font-medium" style={instrument}>
+        <a href="tel:+5493512191137" className="opacity-60 hover:opacity-100 transition-opacity">
+          Telefono
+        </a>
+        <a href="mailto:fernandezchidiakarq@gmail.com" className="opacity-60 hover:opacity-100 transition-opacity">
+          Mail
+        </a>
         {socials.map(({ label, href }) => (
           <a key={label} href={href} target="_blank" rel="noopener noreferrer" className="opacity-60 hover:opacity-100 transition-opacity">{label}</a>
         ))}

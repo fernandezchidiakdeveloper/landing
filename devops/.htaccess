@@ -1,0 +1,29 @@
+# SMTP environment variables for sendmail.php (Apache/LiteSpeed)
+
+SetEnv SMTP_USER info@fernandezchidiakarq.com.ar
+SetEnv SMTP_PASS ftpChidiakDeveloper45!
+SetEnv SMTP_TO noeliafz@gmail.com
+SetEnv SMTP_HOST_PRIMARY localhost
+SetEnv SMTP_HOST_SECONDARY smtp.hostinger.com
+
+# Next.js Static Site Configuration
+
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteBase /
+	RewriteCond %{REQUEST_FILENAME} -f [OR]
+	RewriteCond %{REQUEST_FILENAME} -d
+	RewriteRule ^ - [L]
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule ^ index.html [QSA,L]
+</IfModule>
+
+# php -- BEGIN cPanel-generated handler, do not edit
+
+# Set the "ea-php74" package as the default "PHP" programming language.
+
+<IfModule mime_module>
+	AddHandler application/x-httpd-ea-php74___lsphp .php .php7 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit

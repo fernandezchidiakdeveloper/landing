@@ -64,7 +64,7 @@ foreach ($smtpCandidates as $smtpConfig) {
         $mail->Port       = $smtpConfig['port'];
         $mail->Timeout    = 15;
 
-        $mail->setFrom($username, 'Estudio NF — Contacto');
+        $mail->setFrom($username, 'Estudio NF Contacto');
         $mail->addAddress($to);
         $mail->addReplyTo($email, $name);
 

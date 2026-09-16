@@ -181,7 +181,7 @@ export default function ContactSection() {
               Contactate con nosotros a través de nuestro canal
             </p>
             <a
-              href="https://wa.me/5491161558506"
+              href="https://wa.me/5493512191137"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 w-full py-3.5 rounded-xl text-sm font-semibold text-white"
